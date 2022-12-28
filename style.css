@@ -14,6 +14,7 @@ body {
 
 ul {
     list-style: none;
+    margin: 0;
 }
 
 ul > li, .secondary-text {
@@ -78,8 +79,8 @@ button {
 .header {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 96px;
-    padding-top: 16px;
+    /* margin-bottom: 96px; */
+    padding: 24px 324px 0 324px;
     align-items: center;
 }
 ul {
@@ -91,10 +92,94 @@ ul {
 
 .first-content {
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    padding: 128px 324px;
+    gap: 36px;
 }
-.text {
+.text, .image {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+.block {
+    padding: 64px;
+}
+.headline {
+    text-align: center;
+    margin: 0 0 64px 0;
+}
+.content {
+    display: flex;
+    gap: 32px;
+    /* padding: 0 374px; */
+    justify-content: center;
+    margin: 2% 25% 2% 25%;
+}
+.picture {
+    border: 4px solid #3882f6;
+    width: 180px;
+    height: 180px;
+    border-radius: 16px;
+}
+.container > p {
+    text-align: center;
+    color: #1f2937;
+}
+
+.citation {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0;
+}
+.box {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 8% 26%;
+}
+.paragraph > p, .author > p {
+    padding: 0;
+    margin: 0;
+}
+.author {
+    display: flex;
+    justify-content: right;
+}
+
+.feedback {
+    margin: 5% 15%;
+}
+.blue-box {
+    display: flex;
+    background-color: #3882f6;
+    padding: 5% 10%;
+    border-radius: 12px;
+    justify-content: space-between;
+    align-items: center;
+}
+.left-side {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.left-side > p {
+    color: #f9faf8;
+    font-size: 18px;
+    margin: 0;
+}
+.left-side > .call {
+    font-size: 24px;
+    font-weight: 800;
+}
+.right-side > button {
+    border: 3px solid #f9faf8;
+}
+
+.footer {
+    padding: 1%;
+}
+.footer > .secondary-text {
+    text-align: center;
 }
